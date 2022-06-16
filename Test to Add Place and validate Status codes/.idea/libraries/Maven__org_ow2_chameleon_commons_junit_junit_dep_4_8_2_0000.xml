@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.ow2.chameleon.commons.junit:junit-dep:4.8.2-0000">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ow2/chameleon/commons/junit/junit-dep/4.8.2-0000/junit-dep-4.8.2-0000.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ow2/chameleon/commons/junit/junit-dep/4.8.2-0000/junit-dep-4.8.2-0000-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/ow2/chameleon/commons/junit/junit-dep/4.8.2-0000/junit-dep-4.8.2-0000-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
