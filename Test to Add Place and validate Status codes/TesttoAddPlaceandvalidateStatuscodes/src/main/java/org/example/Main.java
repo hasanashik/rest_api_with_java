@@ -56,6 +56,6 @@ public class Main {
         //check updated address equal to new address.
         Assert.assertEquals(actualAddress,newAddress);
         //Assert.assertEquals(actualAddress,"any address");
-        
+
     }
 }
