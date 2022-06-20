@@ -1,7 +1,9 @@
 package org.example;
+import files.RestUsableMethods;
 import files.payload;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
+import org.testng.Assert;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
@@ -47,12 +49,13 @@ public class Main {
                 .queryParam("place_id",placeId)
                 .when().get("maps/api/place/get/json")
                 .then().assertThat().log().all().statusCode(200).extract().asString();
-        JsonPath js1 = new JsonPath(getPlaceResponse);
+        JsonPath js1 = RestUsableMethods.rawToJson(getPlaceResponse);
         String actualAddress = js1.getString("address");
         System.out.println(actualAddress);
 
-
-
-
+        //check updated address equal to new address.
+        Assert.assertEquals(actualAddress,newAddress);
+        //Assert.assertEquals(actualAddress,"any address");
+        
     }
 }
